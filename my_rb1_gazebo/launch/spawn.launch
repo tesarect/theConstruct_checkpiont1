@@ -1,0 +1,13 @@
+<launch>
+    <param name="robot_description" textfile="$(find my_rb1_description)/urdf/my_rb1_robot.urdf" />
+    
+    <!-- X and Y can will be overridden through the world launch -->
+    <arg name="x" default="0"/>
+    <arg name="y" default="0"/>
+    <!-- Keeping the ground clearance considering the wheels touch the ground -->
+    <arg name="z" default="0.5"/>
+    
+    <node name="my_rb1_robot" pkg="gazebo_ros" type="spawn_model" output="screen"
+          args="-urdf -param robot_description -model my_robot -x $(arg x) -y $(arg y) -z $(arg z)" />
+          
+</launch>

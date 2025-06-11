@@ -49,7 +49,7 @@
     <!-- Left wheel link -->
     <link name="left_wheel">
         <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="1.5707 0 0"/>
             <geometry>
                 <cylinder radius="0.025" length="0.05"/>
             </geometry>
@@ -57,7 +57,7 @@
         </visual>
         
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="1.5707 0 0"/>
             <geometry>
                 <cylinder radius="0.025" length="0.05"/>
             </geometry>
@@ -81,7 +81,7 @@
     <!-- Right wheel link -->
     <link name="right_wheel">
         <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="1.5707 0 0"/>
             <geometry>
                 <cylinder radius="0.025" length="0.05"/>
             </geometry>
@@ -89,7 +89,7 @@
         </visual>
         
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="1.5707 0 0"/>
             <geometry>
                 <cylinder radius="0.025" length="0.05"/>
             </geometry>
