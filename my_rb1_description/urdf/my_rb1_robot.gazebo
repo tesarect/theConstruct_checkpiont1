@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<robot>
+    <!-- Gazebo properties for base_link -->
+    <gazebo reference="base_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    
+    <!-- Gazebo properties for left_wheel -->
+    <gazebo reference="left_wheel">
+        <material>Gazebo/DarkGrey</material>
+        <mu1>1.0</mu1>
+        <mu2>1.0</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <fdir1>1 0 0</fdir1>
+        <!-- other params and args -->
+        <turnGravityOff>false</turnGravityOff>
+    </gazebo>
+    
+    <!-- Gazebo properties for right_wheel -->
+    <gazebo reference="right_wheel">
+        <material>Gazebo/DarkGrey</material>
+        <mu1>1.0</mu1>
+        <mu2>1.0</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd> 
+        <fdir1>1 0 0</fdir1>
+        <!-- other params and args -->
+        <turnGravityOff>false</turnGravityOff>
+    </gazebo>
+    
+    <!-- Gazebo properties for front_caster -->
+    <gazebo reference="front_caster">
+        <material>Gazebo/White</material>
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <fdir1>0 0 0</fdir1> 
+        <!-- other params and args -->
+        <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+    
+    <!-- Gazebo properties for back_caster -->
+    <gazebo reference="back_caster">
+        <material>Gazebo/White</material>
+        <mu1>0.0</mu1>
+        <mu2>0.0</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <fdir1>0 0 0</fdir1>
+        <!-- other params and args -->
+        <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+    
+    <!-- Gazebo properties for front_laser -->
+    <gazebo reference="front_laser">
+        <material>Gazebo/Red</material>
+    </gazebo>
+    
+</robot>

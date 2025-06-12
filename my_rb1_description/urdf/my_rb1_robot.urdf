@@ -29,7 +29,7 @@
             <geometry>
                 <cylinder radius="0.25" length="0.30"/>
             </geometry>
-            <material name="blue"/>
+            <material name="black"/>
         </visual>
         
         <collision>
@@ -45,7 +45,7 @@
             <inertia ixx="0.4277" ixy="0" ixz="0" iyy="0.4277" iyz="0" izz="0.5781"/>
         </inertial>
     </link>
-    
+
     <!-- Left wheel link -->
     <link name="left_wheel">
         <visual>
@@ -69,7 +69,7 @@
             <inertia ixx="0.000365" ixy="0" ixz="0" iyy="0.000365" iyz="0" izz="0.0003125"/>
         </inertial>
     </link>
-    
+
     <!-- Joint connecting base_link and left_wheel -->
     <joint name="base_link_left_wheel_joint" type="continuous">
         <axis xyz="0 1 0"/>
@@ -100,8 +100,9 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <inertia ixx="0.000365" ixy="0" ixz="0" iyy="0.000365" iyz="0" izz="0.0003125"/>
         </inertial>
-    </link>
-    
+    </link>    
+
+
     <!-- Joint connecting base_link and right_wheel -->
     <joint name="base_link_right_wheel_joint" type="continuous">
         <axis xyz="0 1 0"/>
@@ -140,8 +141,8 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <inertia ixx="0.000375" ixy="0" ixz="0" iyy="0.000375" iyz="0" izz="0.000375"/>
         </inertial>
-    </link>
-    
+    </link>   
+
     <!-- Joint connecting base_link and front_caster -->
     <joint name="base_link_front_caster_joint" type="fixed">
         <origin xyz="-0.1 0.0 -0.15" rpy="0 0 0"/>
@@ -180,7 +181,7 @@
             <inertia ixx="0.000375" ixy="0" ixz="0" iyy="0.000375" iyz="0" izz="0.000375"/>
         </inertial>
     </link>
-    
+
     <!-- Joint connecting base_link and back_caster -->
     <joint name="base_link_back_caster_joint" type="fixed">
         <origin xyz="0.1 0.0 -0.15" rpy="0 0 0"/>
@@ -210,8 +211,8 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <inertia ixx="0.000308" ixy="0" ixz="0" iyy="0.000308" iyz="0" izz="0.00045"/>
         </inertial>
-    </link>
-    
+    </link>  
+
     <!-- Joint connecting base_link and front_laser -->
     <joint name="base_link_front_laser_joint" type="fixed">
         <origin xyz="0.25 0.0 0.075" rpy="3.14159 0 0"/>
