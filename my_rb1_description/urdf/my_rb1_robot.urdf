@@ -29,7 +29,7 @@
             <geometry>
                 <cylinder radius="0.25" length="0.30"/>
             </geometry>
-            <material name="black"/>
+            <material name="blue"/>
         </visual>
         
         <collision>
@@ -53,7 +53,7 @@
             <geometry>
                 <cylinder radius="0.025" length="0.05"/>
             </geometry>
-            <material name="gray"/>
+            <material name="red"/>
         </visual>
         
         <collision>
@@ -85,7 +85,7 @@
             <geometry>
                 <cylinder radius="0.025" length="0.05"/>
             </geometry>
-            <material name="gray"/>
+            <material name="red"/>
         </visual>
         
         <collision>
