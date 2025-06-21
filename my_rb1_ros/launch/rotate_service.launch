@@ -1,0 +1,5 @@
+<launch>
+    <!-- Start Service Server for move_bb8_in_circle service -->
+    <node pkg="my_rb1_robot" type="rotate_service.py" name="rb1_rotate"  output="screen">
+    </node>
+</launch>
