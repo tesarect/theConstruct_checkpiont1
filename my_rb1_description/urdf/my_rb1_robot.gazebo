@@ -61,25 +61,27 @@
     <!-- Gazebo properties for left_wheel -->
     <gazebo reference="left_wheel">
         <material>Gazebo/DarkGrey</material>
-        <mu1>1.0</mu1>
-        <mu2>1.0</mu2>
+        <mu1>1.5</mu1>
+        <mu2>1.5</mu2>
         <kp>1000000.0</kp>
-        <kd>100.0</kd>
+        <kd>1000.0</kd>
         <fdir1>1 0 0</fdir1>
         <!-- other params and args -->
         <turnGravityOff>false</turnGravityOff>
+        <dampingFactor>0.1</dampingFactor>
     </gazebo>
     
     <!-- Gazebo properties for right_wheel -->
     <gazebo reference="right_wheel">
         <material>Gazebo/DarkGrey</material>
-        <mu1>1.0</mu1>
-        <mu2>1.0</mu2>
+        <mu1>1.5</mu1>
+        <mu2>1.5</mu2>
         <kp>1000000.0</kp>
-        <kd>100.0</kd> 
+        <kd>1000.0</kd> 
         <fdir1>1 0 0</fdir1>
         <!-- other params and args -->
         <turnGravityOff>false</turnGravityOff>
+        <dampingFactor>0.1</dampingFactor>
     </gazebo>
     
     <!-- Gazebo properties for front_caster -->
@@ -88,10 +90,12 @@
         <mu1>0.0</mu1>
         <mu2>0.0</mu2>
         <kp>1000000.0</kp>
-        <kd>100.0</kd>
+        <kd>1000.0</kd>
         <fdir1>0 0 0</fdir1> 
         <!-- other params and args -->
         <preserveFixedJoint>true</preserveFixedJoint>
+        <dampingFactor>0.2</dampingFactor>
+        <slipCompliance>0.0</slipCompliance>
     </gazebo>
     
     <!-- Gazebo properties for back_caster -->
@@ -100,10 +104,12 @@
         <mu1>0.0</mu1>
         <mu2>0.0</mu2>
         <kp>1000000.0</kp>
-        <kd>100.0</kd>
+        <kd>1000.0</kd>
         <fdir1>0 0 0</fdir1>
         <!-- other params and args -->
         <preserveFixedJoint>true</preserveFixedJoint>
+        <dampingFactor>0.2</dampingFactor>
+        <slipCompliance>0.0</slipCompliance>
     </gazebo>
     
     <!-- Gazebo properties for front_laser -->

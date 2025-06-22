@@ -1,5 +1,9 @@
 <launch>
+
+    <!-- Launch the warehouse world with robot (uses defaults) -->
+    <include file="$(find my_rb1_gazebo)/launch/my_rb1_robot_warehouse.launch"/>
+
     <!-- Start Service Server for move_bb8_in_circle service -->
-    <node pkg="my_rb1_robot" type="rotate_service.py" name="rb1_rotate"  output="screen">
+    <node pkg="my_rb1_ros" type="rotate_service.py" name="rotate_service_server"  output="screen">
     </node>
 </launch>

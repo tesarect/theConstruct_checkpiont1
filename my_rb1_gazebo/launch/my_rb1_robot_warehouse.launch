@@ -20,7 +20,7 @@
 
         <!-- Define spawn position arguments -->
         <arg name="spawn_x" default="-0.4"/>
-        <arg name="spawn_y" default="-1.3"/>
+        <arg name="spawn_y" default="-1.34"/>
         <!-- Include the spawn launch file with your coordinates -->
         <include file="$(find my_rb1_gazebo)/launch/spawn.launch">
             <arg name="x" value="$(arg spawn_x)"/>
